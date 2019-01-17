@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Boletin_17_2">
+  <ClassDiagramComponents>
+    <Class name="Aves" package="boletin_17_2" visibility="public" xPosition="85.0" yPosition="259.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Avestruz" package="boletin_17_2" visibility="public" xPosition="85.0" yPosition="675.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="caminar" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Felino" package="boletin_17_2" visibility="public" xPosition="1233.0" yPosition="427.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="nadar" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Gato" package="boletin_17_2" visibility="public" xPosition="1075.0" yPosition="675.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="caminar" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Mamifero" package="boletin_17_2" visibility="public" xPosition="944.0" yPosition="299.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="caminar" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Murcielago" package="boletin_17_2" visibility="public" xPosition="381.0" yPosition="675.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="volar" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Papagayo" package="boletin_17_2" visibility="public" xPosition="750.0" yPosition="666.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="caminar" returnType="String" visibility="public"/>
+        <Method name="volar" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tigre" package="boletin_17_2" visibility="public" xPosition="1391.0" yPosition="685.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="IPuedeCaminar" package="boletin_17_2" visibility="public" xPosition="482.0" yPosition="42.0">
+      <Methods>
+        <Method name="caminar" returnType="String" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="IPuedeNadar" package="boletin_17_2" visibility="public" xPosition="1019.0" yPosition="42.0">
+      <Methods>
+        <Method name="nadar" returnType="String" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="IPuedeVolar" package="boletin_17_2" visibility="public" xPosition="750.0" yPosition="42.0">
+      <Methods>
+        <Method name="volar" returnType="String" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="boletin_17_2.Mamifero" target="boletin_17_2.IPuedeCaminar"/>
+    <IsRelation name="is" source="boletin_17_2.Avestruz" target="boletin_17_2.Aves"/>
+    <IsRelation name="is" source="boletin_17_2.Gato" target="boletin_17_2.Felino"/>
+    <IsRelation name="is" source="boletin_17_2.Murcielago" target="boletin_17_2.Mamifero"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="boletin_17_2.Murcielago" target="boletin_17_2.IPuedeVolar"/>
+    <IsRelation name="is" source="boletin_17_2.Tigre" target="boletin_17_2.Felino"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="boletin_17_2.Avestruz" target="boletin_17_2.IPuedeCaminar"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="boletin_17_2.Felino" target="boletin_17_2.IPuedeNadar"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="boletin_17_2.Papagayo" target="boletin_17_2.IPuedeCaminar"/>
+    <IsRelation name="is" source="boletin_17_2.Papagayo" target="boletin_17_2.Aves"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="boletin_17_2.Papagayo" target="boletin_17_2.IPuedeVolar"/>
+    <IsRelation name="is" source="boletin_17_2.Felino" target="boletin_17_2.Mamifero"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

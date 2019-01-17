@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Boletin_17_1">
+  <ClassDiagramComponents>
+    <Class name="Gato" package="boletin_17_1" visibility="public" xPosition="318.0" yPosition="499.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="nadar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Mamifero" package="boletin_17_1" visibility="public" xPosition="634.0" yPosition="295.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="caminar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Papagayo" package="boletin_17_1" visibility="public" xPosition="950.0" yPosition="499.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="caminar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="IPuedeCaminar" package="boletin_17_1" visibility="public" xPosition="792.0" yPosition="60.0">
+      <Methods>
+        <Method name="caminar" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="IPuedeNadar" package="boletin_17_1" visibility="public" xPosition="476.0" yPosition="60.0">
+      <Methods>
+        <Method name="nadar" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="boletin_17_1.Papagayo" target="boletin_17_1.IPuedeCaminar"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="boletin_17_1.Mamifero" target="boletin_17_1.IPuedeCaminar"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="boletin_17_1.Gato" target="boletin_17_1.IPuedeNadar"/>
+    <IsRelation name="is" source="boletin_17_1.Gato" target="boletin_17_1.Mamifero"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
